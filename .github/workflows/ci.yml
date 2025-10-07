@@ -3,14 +3,12 @@ name: CI
 on:
   push:
     branches: [main]
+    tags:
+      - "v*.*.*"
   pull_request:
     branches: [main]
   release:
     types: [published]
-  # release job will run on tag push as well
-  push:
-    tags:
-      - 'v*.*.*'
 
 jobs:
   lint:
