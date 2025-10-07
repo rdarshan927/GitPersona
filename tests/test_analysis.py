@@ -22,5 +22,5 @@ def test_analyze_basic():
     res = analyze_user("alice", repos)
     assert res["username"] == "alice"
     assert res["total_repos"] == 3
-    assert any(l["language"] == "Python" for l in res["top_languages"]) 
+    assert any(item["language"] == "Python" for item in res["top_languages"]) 
     assert res["stars"] == 7
