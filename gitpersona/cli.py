@@ -1,4 +1,5 @@
 """Command-line interface for GitPersona."""
+
 import argparse
 import os
 import sys
@@ -7,7 +8,9 @@ from .analysis import analyze_user
 
 
 def build_parser():
-    p = argparse.ArgumentParser(prog="gitpersona", description="Analyze a GitHub user's persona and stats")
+    p = argparse.ArgumentParser(
+        prog="gitpersona", description="Analyze a GitHub user's persona and stats"
+    )
     sub = p.add_subparsers(dest="cmd")
 
     analyze = sub.add_parser("analyze", help="Analyze a GitHub username")

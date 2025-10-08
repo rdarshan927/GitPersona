@@ -1,4 +1,5 @@
 """Analysis utilities for GitPersona."""
+
 from collections import Counter
 from datetime import datetime
 from typing import List, Dict, Any
@@ -45,7 +46,9 @@ def analyze_user(username: str, repos: List[Dict[str, Any]]) -> Dict[str, Any]:
     return summary
 
 
-def _derive_persona(total_repos: int, languages: Counter, pushes_by_hour: Counter) -> str:
+def _derive_persona(
+    total_repos: int, languages: Counter, pushes_by_hour: Counter
+) -> str:
     """Very simple heuristic rules to produce a persona label."""
     if not languages:
         return "Observer"

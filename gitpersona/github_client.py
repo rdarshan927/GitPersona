@@ -1,4 +1,5 @@
 """Simple GitHub API client used by GitPersona."""
+
 import os
 import requests
 from typing import List, Dict, Any

@@ -2,6 +2,7 @@
 
 Lightweight toolkit to analyze GitHub profiles locally.
 """
+
 __version__ = "0.1.0"
 
 # Keep the package surface minimal. Import CLI at runtime via:
