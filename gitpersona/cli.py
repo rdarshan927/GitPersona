@@ -4,8 +4,9 @@ import argparse
 import json
 import os
 import sys
-from .github_client import GitHubClient
+
 from .analysis import analyze_user
+from .github_client import GitHubClient
 
 
 def build_parser():
@@ -17,7 +18,11 @@ def build_parser():
     analyze = sub.add_parser("analyze", help="Analyze a GitHub username")
     analyze.add_argument("username", help="GitHub username to analyze")
     analyze.add_argument("--output", "-o", help="Write JSON output to file")
-    analyze.add_argument("--token", "-t", help="GitHub API token (overrides GITHUB_TOKEN env var)")
+    analyze.add_argument(
+        "--token",
+        "-t",
+        help="GitHub API token (overrides GITHUB_TOKEN env var)",
+    )
 
     return p
 

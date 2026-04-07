@@ -13,3 +13,6 @@ dependencies = ["requests"]
 
 [project.scripts]
 gitpersona = "gitpersona.cli:main"
+
+[tool.black]
+target-version = ["py312"]
