@@ -55,6 +55,21 @@ export GITHUB_TOKEN=ghp_...
 
 - The project uses a minimal `requests`-based client. For larger-scale usage consider hitting GraphQL or adding caching and rate-limit handling.
 
+ - The project uses a minimal `requests`-based client. For larger-scale usage consider hitting GraphQL or adding caching and rate-limit handling.
+
+## AUR package
+
+This project is packaged in the Arch User Repository (AUR) as `python-gitpersona`.
+
+- AUR package page: https://aur.archlinux.org/packages/python-gitpersona
+- Package name: `python-gitpersona`
+
+Install from AUR using your AUR helper (example with `yay`):
+
+```bash
+yay -S python-gitpersona
+```
+
 # GitPersona
 
 Lightweight developer persona and analytics toolkit for GitHub profiles.
