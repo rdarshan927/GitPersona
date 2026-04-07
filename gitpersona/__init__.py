@@ -3,7 +3,7 @@
 Lightweight toolkit to analyze GitHub profiles locally.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 # Keep the package surface minimal. Import CLI at runtime via:
 #     from gitpersona import cli
